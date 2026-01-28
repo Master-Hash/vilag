@@ -133,6 +133,7 @@ jobs:
     runs-on: ubuntu-slim
     needs:
       - lint
+      - build
     steps:
       - uses: actions/checkout@v6
       - name: setup pnpm
