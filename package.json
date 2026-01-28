@@ -1,12 +1,13 @@
 {
-  "name": "@napi-rs/package-template-pnpm",
+  "name": "@master-hash/vilag",
   "version": "1.1.1",
+  "type": "module",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
   "types": "index.d.ts",
   "browser": "browser.js",
   "repository": {
-    "url": "git+ssh://git@github.com/napi-rs/package-template-pnpm.git",
+    "url": "git+ssh://git@github.com/Master-Hash/vilag.git",
     "type": "git"
   },
   "license": "MIT",
@@ -24,22 +25,16 @@
     "browser.js"
   ],
   "napi": {
-    "binaryName": "package-template",
+    "binaryName": "vilag",
     "targets": [
       "x86_64-apple-darwin",
       "aarch64-apple-darwin",
       "x86_64-unknown-linux-gnu",
       "x86_64-pc-windows-msvc",
-      "x86_64-unknown-linux-musl",
       "aarch64-unknown-linux-gnu",
-      "i686-pc-windows-msvc",
-      "armv7-unknown-linux-gnueabihf",
       "aarch64-linux-android",
-      "x86_64-unknown-freebsd",
-      "aarch64-unknown-linux-musl",
       "aarch64-pc-windows-msvc",
-      "armv7-linux-androideabi",
-      "wasm32-wasi-preview1-threads"
+      "wasm32-wasip1-threads"
     ]
   },
   "engines": {
@@ -64,23 +59,23 @@
     "version": "napi version"
   },
   "devDependencies": {
-    "@emnapi/core": "^1.5.0",
-    "@emnapi/runtime": "^1.5.0",
-    "@napi-rs/cli": "^3.2.0",
-    "@napi-rs/wasm-runtime": "^1.0.4",
+    "@emnapi/core": "^1.8.1",
+    "@emnapi/runtime": "^1.8.1",
+    "@napi-rs/cli": "^3.5.1",
+    "@napi-rs/wasm-runtime": "^1.1.1",
     "@oxc-node/core": "^0.0.35",
     "@taplo/cli": "^0.7.0",
-    "@tybys/wasm-util": "^0.10.0",
+    "@tybys/wasm-util": "^0.10.1",
     "ava": "^6.4.1",
     "chalk": "^5.6.2",
-    "emnapi": "^1.5.0",
+    "emnapi": "^1.8.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.6",
+    "lint-staged": "^16.2.7",
     "npm-run-all2": "^8.0.4",
-    "oxlint": "^1.14.0",
-    "prettier": "^3.6.2",
+    "oxlint": "^1.42.0",
+    "prettier": "^3.8.1",
     "tinybench": "^6.0.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "lint-staged": {
     "*.@(js|ts|tsx)": [
@@ -114,5 +109,5 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "pnpm@10.28.1"
+  "packageManager": "pnpm@10.28.2"
 }
